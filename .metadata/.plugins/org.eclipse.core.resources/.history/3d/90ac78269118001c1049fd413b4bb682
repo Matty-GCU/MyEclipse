@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>标记语法及属性</title>
+	<style type="text/css">
+		body{background-color:#C6E6E6}
+		div{text-align:center;/*文本居中对齐*/}
+		h3{text-align:center;}
+	</style>
+</head>
+<body bgcolor="#C6E6E6">
+	<h3>欢度新年元旦</h3>
+	<hr size="2" color="red" width="100%">
+	<p>
+</body>
+</html>

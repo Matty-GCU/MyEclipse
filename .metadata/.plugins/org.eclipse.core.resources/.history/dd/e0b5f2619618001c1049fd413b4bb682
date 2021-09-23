@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>标记语法及属性</title>
+	<style type="text/css">
+		body{background-color:#C6E6E6}
+		div{text-align:center;/*文本居中对齐*/}
+		h3{text-align:center;}
+		p{text-indent:2em;}
+	</style>
+</head>
+<body bgcolor="#C6E6E6">
+	<h3>欢度新年元旦</h3>
+	<hr size="2" color="white" width="100%">
+	<p align="left">
+		&nbsp;&nbsp;&nbsp;&nbsp;元旦，即公历的1月1日，是世界多数国家通称的“新年”。元，谓“始”，凡数之始称为“元”；旦，谓“日”；“元旦”即“初始之日”的意思。<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;“元旦”通常指历法中的首月首日。在我国，“元旦”一词古已有之，在文学作品中最早见于《晋书》。我国历史上的“元旦”指的是“正月一日”，“正月”的计算方法，在汉武帝时期以前是很不统一的，历代的元旦（首月首日）日期并不一致。<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;辛亥革命后，为了“行夏正，所以顺农时，从西历，所以便统计”，民国元年决定使用公历（实际使用是1912年），并规定阳历1月1日为“新年”，但并不叫“元旦”。1949年中华人民共和国以公历1月1日为元旦，因此“元旦”在中国也被称为“阳历年”、“新历年”或“公历年”。<br>
+	</p>
+	<div>
+		<img alt="元旦快乐" src="images/元旦1.jpg">
+		<img alt="元旦快乐" src="images/元旦1.jpg">
+	</div>
+	
+</body>
+</html>

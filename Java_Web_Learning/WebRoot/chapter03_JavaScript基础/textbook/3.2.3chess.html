@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.writeln("<table width=400 height=400 border=1>");
+		for(i = 0; i < 8; i++) {
+			document.writeln("<tr>");
+			for(j = 0; j < 8; j++) {
+				color = "black";
+				if((i + j) % 2 == 0) {
+					color = "white";
+				}
+				document.writeln("<td bgcolor=" + color + "></td>");
+			}
+			document.writeln("</tr>");
+		}
+		document.writeln("</table>");
+		document.writeln("屌啊");
+	</script>
+</body>
+</html>

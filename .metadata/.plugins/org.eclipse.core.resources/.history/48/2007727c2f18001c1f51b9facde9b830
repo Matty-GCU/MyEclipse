@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>超链接的应用</h1>
+	<h3><a href="C:/Users/Matty's PC/Desktop/批处理标准教程.pdf">1.HTTP文件下载</a></h3>
+	<h3><a href="ftp://10.5.1.5">2.FTP站点访问</a></h3>
+	<h3>
+		3.图像超链接
+		<a href="https://www.baidu.com/"><img border="10" alt="百度logo" src="https://www.baidu.com/bd_logo1.png"></a>
+	</h3>
+	<h3>
+		4.邮件超链接
+		<a href="mailto:someone@microsoft.com;xyz@163.com?cc=jlchu@163.com&bcc=123456789@qq.com&subject=Hello%20again&body=你好">发送文件</a>
+	</h3>
+	<p>应该使用%20来替换单词之间的空格，这样浏览器就可以正确地显示文本了。</p>
+</body>
+</html>

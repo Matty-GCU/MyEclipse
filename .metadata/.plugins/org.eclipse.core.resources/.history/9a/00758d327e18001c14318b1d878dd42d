@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style type="text/css">
+		p{text-indent:2em;/*首行缩进2个字符*/}
+	</style>1
+</head>
+<body text="green">
+	<h3 align="center">blablabla</h3>
+	<hr color="red">
+	<p>blablablablabla</p>
+</body>
+</html>

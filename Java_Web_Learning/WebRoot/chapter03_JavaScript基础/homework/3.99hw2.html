@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var data = new Array(10);
+		function storeAll() {
+			data[0] = Number(document.form1.book1.value);
+			data[1] = Number(document.form1.book2.value);
+			data[2] = Number(document.form1.book3.value);
+			data[3] = Number(document.form1.book4.value);
+			data[4] = Number(document.form1.book5.value);
+			data[5] = Number(document.form1.book6.value);
+			data[6] = Number(document.form1.book7.value);
+			data[7] = Number(document.form1.book8.value);
+			data[8] = Number(document.form1.book9.value);
+			data[9] = Number(document.form1.book10.value);
+		}
+		function findMax() {
+			storeAll();
+			var max = 0;
+			for(var i = 0; i < 10; i++) {
+				if(data[i] > max) {
+					max = data[i]
+				}
+			}
+			document.form1.text1.value = max;
+		} 
+		function findMin() {
+			storeAll();
+			var min = data[0];
+			for(var i = 1; i < 10; i++) {
+				if(data[i] < min) {
+					min = data[i]
+				}
+			}
+			document.form1.text2.value = min;
+		}
+		function findAvg() {
+			storeAll();
+			var sum = 0;
+			for(var i = 0; i < 10; i++) {
+				sum += data[i];
+			}
+			document.form1.text3.value = sum / 10;
+		}
+	</script>
+	请输入10本书的价格：<br>
+	<form name="form1">
+		<input name="book1" type="text"><br>
+		<input name="book2" type="text"><br>
+		<input name="book3" type="text"><br>
+		<input name="book4" type="text"><br>
+		<input name="book5" type="text"><br>
+		<input name="book6" type="text"><br>
+		<input name="book7" type="text"><br>
+		<input name="book8" type="text"><br>
+		<input name="book9" type="text"><br>
+		<input name="book10" type="text"><br>
+		<input type="button" value="求最高价格：" onclick="findMax()">
+		<input name="text1" type="text"><br>
+		<input type="button" value="求最低价格：" onclick="findMin()">
+		<input name="text2" type="text"><br>
+		<input type="button" value="求平均价格：" onclick="findAvg()">
+		<input name="text3" type="text"><br>
+	</form>
+</body>
+</html>

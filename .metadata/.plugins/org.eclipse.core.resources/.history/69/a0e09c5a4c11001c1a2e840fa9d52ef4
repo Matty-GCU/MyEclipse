@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		str = new Array("1", "2", "3");
+		while(true) {
+		}
+	</script> 
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var msg = "JavaScript";
+		var p = 123;
+		if(true){
+		     win.alert("块内输出msg：" + msg);//①
+		     win.alert("块内输出p：" + p);//②
+		     let msg = "JScript";
+		     const p = 456;
+		}
+		console.log("块外输出msg：" + msg); //③
+		console.log("块外输出p：" + p); //④
+	</script>
+</body>
+</html>

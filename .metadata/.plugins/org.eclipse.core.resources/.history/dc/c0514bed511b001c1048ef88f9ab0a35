@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>简易灯箱画廊</title>
+		<style type="text/css">
+			hr{color:red;}
+		</style>
+	</head>
+	<body>
+		<h1>简易灯箱画廊设计</h1>
+		<hr size="5">
+		<ul>
+			<img src="images/t10.jpg">
+		</ul>
+	</body>
+</html>

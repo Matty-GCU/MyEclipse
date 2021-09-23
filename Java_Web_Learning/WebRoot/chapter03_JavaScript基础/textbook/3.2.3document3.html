@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function add() {
+			var num1 = Number(document.form1.text1.value);
+			var num2 = Number(document.form1.text2.value);
+			document.form1.text3.value = num1 + num2;
+		}
+	</script>
+	<form name="form1">
+		<input name="text1" type="text"><br>
+		<input name="text2" type="text"><br>
+		<input name="button1" type="button" onclick="add()" value="求和"><br>
+		<button onclick="add()">求和2</button>
+		<input name="text3" type="text"><br>
+	</form>
+</body>
+</html>

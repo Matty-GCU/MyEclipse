@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		window.alert("将在3秒后跳转到新页面...");
+		timer = window.setTimeout("fun()", "3000");
+		//clearTimeout(timer);
+		function fun() {
+			window.open("https://developer.mozilla.org/zh-CN/docs/Web/API/Window/open", "", "");
+		}
+	</script>
+</body>
+</html>

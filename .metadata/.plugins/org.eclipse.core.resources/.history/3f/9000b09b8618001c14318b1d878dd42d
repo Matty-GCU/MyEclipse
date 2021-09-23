@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style type="text/css">
+		h1{text-align:center;background:#6699ff;padding:20px;}
+		p{text-indent:2em;}
+	</style>
+</head>
+<body text="red">
+	<h1 align="center">新&nbsp;年&nbsp;寄&nbsp;语</h1>
+	<hr size="2" color="#6600ff" width="1000px"/>
+	<p align="left">
+		abcdefghijklmnopqrstuvwxyz20210918abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+		abcdefghijklmnopqrstuvwxyz
+	</p>
+	<p align="right">
+		abcdefghijklmnopqrstuvwxyz20210918abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+		abcdefghijklmnopqrstuvwxyz
+	</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	
+</head>
+<body>
+	<div>
+		<h3>浮动框架运用</h3>
+		<hr color="red"/>
+		<iframe name="leftframe" src="http://www.njust.edu.cn" width="300" height="300"></iframe>
+		&nbsp;&nbsp;
+		<iframe name="rightframe" src="http://"></iframe>
+	</div>
+</body>
+</html>

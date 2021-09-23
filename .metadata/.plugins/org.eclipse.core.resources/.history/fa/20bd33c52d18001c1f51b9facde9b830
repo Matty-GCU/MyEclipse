@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>超链接的应用</h1>
+	<h3><a href="C:/Users/Matty's PC/Desktop/批处理标准教程.pdf">1.HTTP文件下载</a></h3>
+	<h3><a href="ftp://10.5.1.5">2.FTP站点访问</a></h3>
+	<h3>3.图像超链接</h3>
+	<a href="https://www.baidu.com/"><img border="0" alt="百度logo" src="https://www.baidu.com/bd_logo1.png"></a>
+</body>
+</html>
