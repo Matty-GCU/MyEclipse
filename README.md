@@ -1,2 +1,0 @@
-# MyEclipse
-MyEclipse Workspace
