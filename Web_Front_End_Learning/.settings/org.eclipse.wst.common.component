@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="Web_Front_End_Learning">
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <wb-resource deploy-path="/" source-path="/chapter07_basicsOfCSS"/>
-        <property name="java-output-path" value="/Web_Front_End_Learning/WebRoot/WEB-INF/classes"/>
-        <property name="context-root" value="Web_Front_End_Learning"/>
-    </wb-module>
-</project-modules>
