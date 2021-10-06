@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] a = new String[5];
+		int[] a1 = new int[5];
+		Integer[] a2 = new integer[5];
+		StringBuffer[] b = new StringBuffer[5];
+		Scanner[] c = new Scanner[5];
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+	}
+
+}

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <modules>
   <module deployMode="EXPLODED" moduleId="org.eclipse.jst.jee.server:Java Web Learning" serverId="Tomcat v9.0 Server at localhost"/>
+  <module deployMode="EXPLODED" moduleId="org.eclipse.jst.jee.server:Web_Front_End_Learning_New" serverId="Tomcat v9.0 Server at localhost"/>
   <module deployMode="EXPLODED" moduleId="org.eclipse.jst.jee.server:Java_Web_Learning" serverId="Tomcat v9.0 Server at localhost"/>
   <module deployMode="EXPLODED" moduleId="org.eclipse.jst.jee.server:WebFrontEndLearning" serverId="Tomcat v9.0 Server at localhost"/>
   <module deployMode="EXPLODED" moduleId="org.eclipse.jst.jee.server:JavaWebLearning" serverId="Tomcat v9.0 Server at localhost"/>

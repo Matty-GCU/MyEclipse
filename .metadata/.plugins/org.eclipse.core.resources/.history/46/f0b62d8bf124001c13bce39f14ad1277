@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			String rightAccount = "1301480735";
+			String rightPsw = "123456789";
+			String account = request.getParameter("account");
+			String psw = request.getParameter("psw");
+			if(rightAccount.equals(account) && rightPsw.equals(psw)) {
+				out.println("登录成功！");
+			}
+			else {
+				out.println("登录失败！");
+			}
+			String[] registerOrNot = request.getParameterValues("check");
+			if(registerOrNot.length == 1 && registerOrNot[0].equals("yes")) {
+				out.println("欢迎您注册为会员");
+			}
+			int times = Integer.parseInt(request.getParameter("numberToBePrinted"));
+		%>
+	</body>
+</html>

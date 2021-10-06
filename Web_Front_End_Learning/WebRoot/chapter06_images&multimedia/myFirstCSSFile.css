@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+ul{list-style:none;}	/*ul的li去掉小圆点*/
+li{display:inline;}		/*li横着排*/
+li{margin:0px 20px;}	/*li的上外边距和下外边距是0px，右外边距和左外边距是20px*/
+p{text-indent:2em;}		/*p的段头都缩进2格*/
+/*img图片向左浮动+文字环绕，左间距50px*/
+img{float:left;margin-left:50px;}
+/*div01块高度60px，*/
+#div01{background:#99ffcc;height:60px;}
+/*div02块高度500px，*/
+#div02{background:#99ffcc;height:500px;}
+/*ul01的li向左浮动，顶部填充25px，左边填充20px*/
+#ul01 li{float:left;padding-top:25px;padding-left:20px;}

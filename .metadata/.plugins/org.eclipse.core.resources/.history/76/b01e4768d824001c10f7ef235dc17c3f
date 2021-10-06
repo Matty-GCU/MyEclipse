@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		请选择您的爱好：
+		<form action="5.3checkForm_result.jsp" method="post">
+			<input type="checkbox" name="hobby" value="singing">唱歌
+			<input type="checkbox" name="hobby" value="dancing">跳舞
+			<input type="checkbox" name="hobby" value="playing basketball">打球
+			<input type="checkbox" name="hobby" value="playing games">玩游戏
+			<input type="submit" value="注册">
+		</form>
+	</body>
+</html>

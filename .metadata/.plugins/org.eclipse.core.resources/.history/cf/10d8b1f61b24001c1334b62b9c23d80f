@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<form action="5.3.2listForm_result.jsp">
+			请选择您的爱好：<br>
+			<select name="fav">
+				<option value="sing">唱歌</option>
+				<option value="dance">跳舞</option>
+				<option value="ball">打球</option>
+				<option value="game">玩游戏</option>
+			</select>
+			<input type="submit" value="注册">
+		</form>
+	</body>
+</html>
