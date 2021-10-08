@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择器演示</title>
+		<style type="text/css">
+			a:link{color:gray;text-decoration:underline;}
+			a:visited{color:blue;text-decoration:none;}
+			a:hover{color:red;text-decoration:underline;}
+			a:active{color:yellow;text-decoration:none;}
+			p:fisrt-letter{font-size:32px;font-weight:bold;font-family:"楷体";}
+			p:fisrt-line{font-size:32px;}
+		</style>
+	</head>
+	<body>
+		<p>
+			blablablablablablablablablablablablablablablablablablablablablablablabla
+			blablablablablablablablablablablablablablablablablablablablablablablabla
+			blablablablablablablablablablablablablablablablablablablablablablablabla
+			blablablablablablablablablablablablablablablablablablablablablablablabla
+		</p>
+		<a href="https://www.baidu.com">baidu</a>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>属性选择器的应用</title>
+		<style type="text/css">
+			[title]{font-size:18px;color:green;}
+			p[name="a"]{font-style:italic;}		/*name是a的，是段落1*/
+			p[name~="a"]{font-weight:bold;}		/*name数组有a的，是段落1、2*/
+			p[name^="a"]{text-align:center;;}	/*name以a结尾的1.2*/
+		</style>
+	</head>
+	<body>
+		<h3>属性选择器的应用</h3>
+		<p title="p1" name="a">段落1：p的title属性为p1（把鼠标放上来就可以看到title属性的值），name属性为a</p>
+		<p name="a b">段落2：p的name属性为b</p>
+		<p name="ba">段落3：p的name属性为c</p>
+		<p name="d">段落4：p的name属性为d</p>
+	</body>
+</html>

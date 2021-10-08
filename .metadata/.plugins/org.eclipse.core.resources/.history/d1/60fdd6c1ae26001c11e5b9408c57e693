@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>属性选择器的应用</title>
+		<style type="text/css">
+			[title]{font-size:18px;color:green;}
+			p[name="a"]
+		</style>
+	</head>
+	<body>
+		<h3>属性选择器的应用</h3>
+		<p title="p1" name="a">p的title属性为p1（把鼠标放上来就可以看到title属性的值），name属性为a</p>
+		<p name="a b">p的name属性为b</p>
+		<p name="c">p的name属性为c</p>
+		<p name="d">p的name属性为d</p>
+	</body>
+</html>

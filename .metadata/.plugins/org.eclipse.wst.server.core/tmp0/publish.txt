@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Wed Oct 06 19:27:25 CST 2021
-org.eclipse.jst.jee.server\:Web_Front_End_Learning_New=C\:\\001MyProgramFiles\\apache-tomcat-9.0.8\\webapps\\Web_Front_End_Learning_New
+#Fri Oct 08 20:20:19 CST 2021
+org.eclipse.jst.jee.server\:Web_Front_End_Learning=C\:\\001MyProgramFiles\\apache-tomcat-9.0.8\\webapps\\Web_Front_End_Learning
 org.eclipse.jst.jee.server\:Java_Web_Learning=C\:\\001MyProgramFiles\\apache-tomcat-9.0.8\\webapps\\Java_Web_Learning

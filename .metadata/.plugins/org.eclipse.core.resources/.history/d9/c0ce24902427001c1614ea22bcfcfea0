@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hoverbox Image Gallery</title>
+		<link type="text/css" rel="stylesheet" href="hoverbox.css">
+	</head>
+	<body>
+		<div>
+			<h1>鼠标经过图片显示大图(Hoverbox Image Gallery)</h1>
+			<ul class="hoverbox">
+				<li>
+					
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

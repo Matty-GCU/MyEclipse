@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+/*全局声明*/
+*{
+	boder: 0;
+	margin: 0;
+	padding: 0;
+}

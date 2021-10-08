@@ -16,34 +16,37 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="images/trees" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="../../../Workspaces/MyEclipse%202016%20CI/Web_Front_End_Learning/WebRoot/experiment/"/>
+			<item value=" ."/>
+			<item value="a href=&quot;#&quot;"/>
+			<item value="03"/>
 			<item value="trees"/>
 			<item value="tree"/>
 			<item value=" height=&quot;200&quot;"/>
 			<item value="height=&quot;200&quot;"/>
-			<item value="hw5"/>
-			<item value="4_2"/>
-			<item value="values"/>
 		</list>
 		<list key="replacehistory">
-			<item value="images/trees"/>
-			<item value="trees"/>
 			<item value=""/>
-			<item value="hw4"/>
-			<item value="3_2"/>
-			<item value="data"/>
+			<item value="."/>
+			<item value="a"/>
+			<item value="09"/>
+			<item value="08"/>
+			<item value="07"/>
+			<item value="06"/>
+			<item value="05"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="325" key="DIALOG_WIDTH"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 		<item value="444" key="DIALOG_HEIGHT"/>
-		<item value="807" key="DIALOG_X_ORIGIN"/>
-		<item value="228" key="DIALOG_Y_ORIGIN"/>
+		<item value="1222" key="DIALOG_X_ORIGIN"/>
+		<item value="237" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
