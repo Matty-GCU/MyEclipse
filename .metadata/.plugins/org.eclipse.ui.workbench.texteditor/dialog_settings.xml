@@ -22,6 +22,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="菜鸟教程："/>
 			<item value="../../../Workspaces/MyEclipse%202016%20CI/Web_Front_End_Learning/WebRoot/experiment/"/>
 			<item value=" ."/>
 			<item value="a href=&quot;#&quot;"/>
@@ -29,7 +30,6 @@
 			<item value="trees"/>
 			<item value="tree"/>
 			<item value=" height=&quot;200&quot;"/>
-			<item value="height=&quot;200&quot;"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

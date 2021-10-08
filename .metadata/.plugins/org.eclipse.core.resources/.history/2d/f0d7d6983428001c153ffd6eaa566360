@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+/*改变自课本104-105页hoverbox.css*/
+div{
+	width: 550px;      /*将全部显示内容限制在一个特定大小的区域内*/
+	height: 550px;
+	margin: auto;      /*外边距若设置为auto，则要么等于0px，要么占据所有可用空间再平分放置*/
+}
+h1{
+    border-bottom: 2px dashed red;      /*border-bottom-width border-bottom-style border-bottom-color*/
+    color: blue;
+    font: 18px Georgia, sans-serif;     /*font-size font-family*/
+    margin: 10px;                       /*上下左右边距10px（即外边距）*/
+    padding: 35px;                      /*上下左右填充35px（相当于“内边距”）*/
+	text-align:center;
+}
+
+.hoverbox a{
+    cursor: pointer;        /*cursor属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状*/
+}
+.hoverbox a .preview{
+    display: none;          /*此元素不会被显示*/
+    width: 200px;
+    height: 150px;
+}
+.hoverbox a:hover .preview{
+    display: block;         /*此元素将显示为块级元素，此元素前后会带有换行符*/
+    position: absolute;     /*以绝对定位方式显示。即使发生层叠，位置也不会改变*/
+    top: -33px;             /*相对当前位置偏移量*/
+    left: -45px;
+    z-index: 1;             /*z-index 属性指定一个元素的堆叠顺序。（默认值auto）*/
+}
+
+
+.hoverbox li{
+    border-color: blue yellow red pink;
+    border-style: solid;
+    border-width: 4px;
+    float: left;
+    display: inline;		/*默认inline。此元素会被显示为内联元素，元素前后没有换行符。在本例中，使用list-style: none;可达到同样的“去小黑点”效果。*/
+    margin: 3px;
+    padding: 12px;   
+    position: relative;       /*位置为相对的方式*/ 
+}
+.hoverbox img{
+    background: #a51;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    padding: 4px;
+    vertical-align: top;
+    width: 100px;
+    height: 75px;
+}
