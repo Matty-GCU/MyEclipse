@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>20211014(ddl)Java Web作业（第6章）</title>
+	</head>
+	<body>
+		<form action="execute_sql.jsp">
+			输入学号:<input name="id" type="text"><br>
+			输入姓名:<input name="name" type="text"><br>
+			<select name="select">
+				<option>---选择操作类型---</option>
+				<option value="增加">增加(Create)</option>
+				<option value="修改">修改(Retrieve)</option>				
+				<option value="查询">查询(Update)</option>				
+				<option value="删除">删除(Delete)</option>
+			</select>
+			<input type="submit" value="提交查询">
+		</form>
+	</body>
+</html>

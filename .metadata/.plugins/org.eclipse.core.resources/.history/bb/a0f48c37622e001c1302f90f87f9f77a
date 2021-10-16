@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>20211014(ddl)Java Web作业（第6章）</title>
+		<!--
+			还有其他实现方法。
+			1）比如，用js，这就很灵活了，根据点击内容的不同，进行相应的判定，进入不同的页面（比如添加页面和修改页面是不一样，修改要填两次/两份信息），
+			但是老师在这章估计不想让我们用js。
+			2）还有就是不用表单，直接用超链接<a href和浮动框架<iframe，也可以对增删改查四种操作进行对应的处理。
+		-->
+	</head>
+	<body>
+		<h2><a href="insert.jsp" target="frame">添加</a></h2>
+		<h2><a href="delete.jsp" target="frame">删除</a></h2>
+		<h2><a href="update.jsp" target="frame">修改</a></h2>
+		<h2><a href="search.jsp" target="frame">查询</a></h2>
+		<iframe name="frame" width=1200px height=800px>
+		</iframe>
+	</body>
+</html>

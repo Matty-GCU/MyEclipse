@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<form action="executeSql.jsp">
+			输入学号:<input name="id" type="text">
+			输入姓名:<input name="name" type="text">
+			<select name="select">
+				<option value="增加">增加(Create)</option>
+				<option value="修改">修改(Retrieve)</option>				
+				<option value="查询">查询(Update)</option>				
+				<option value="删除">删除(Delete)</option>
+			</select>
+			
+		</form>
+	</body>
+</html>
