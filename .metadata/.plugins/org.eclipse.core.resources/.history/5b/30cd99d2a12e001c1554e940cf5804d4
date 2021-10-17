@@ -1,0 +1,30 @@
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			String name = request.getParameter("name");
+			String id = request.getParameter("id");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/students", "root", "123456");
+			if("".equals(name)) {
+				out.println("温馨提醒：<br>添加时，必须填写姓名（主键）。<br>输入*则查询表中所有记录。");
+			}
+			else {
+				Statement stat = conn.createStatement();
+				String sql = "INSERT INTO students_for_javaweb(name, id) VALUES ('" + name + "', '" + id + "')";
+				stat.execute(sql);
+				stat.close();
+				conn.close();
+				out.println("成功添加一条记录！");
+			}
+		%>
+		<form action="insertPage.html">
+			<input type="submit" value="继续添加">
+		</form>
+	</body>
+</html>

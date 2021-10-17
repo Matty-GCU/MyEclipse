@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Insert title here</title>
+		<style type="text/css">
+			div{
+				text-align: center;
+			}
+			.span1{
+				font-size: 35px;
+			}
+			.left_span {
+				float: left;
+			}
+			.right_span{
+				float: right;
+			}
+			#theDiv{
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			
+		</div>
+		<br>
+		count in set<br>
+		<form action="selectPage.html">
+			<input type="submit" value="继续查询">
+		</form>
+	</body>
+</html>

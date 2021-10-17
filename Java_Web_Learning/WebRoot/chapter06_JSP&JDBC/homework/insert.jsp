@@ -11,22 +11,20 @@
 			String id = request.getParameter("id");
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/students", "root", "123456");
-			PreparedStatement preparedSql = null;
 			if("".equals(name)) {
-				out.println("温馨提醒：<br>添加时，必须填写姓名（主键）。");
+				out.println("添加失败！");
 			}
 			else {
-				preparedSql = conn.prepareStatement("INSERT INTO students_for_javaweb(name, id) VALUES (?, ?)");
-				preparedSql.setString(1, name); 
-				preparedSql.setString(2, id); 
-				preparedSql.executeUpdate();
-				preparedSql.close();
+				Statement stat = conn.createStatement();
+				String sql = "INSERT INTO students_for_javaweb(name, id) VALUES ('" + name + "', '" + id + "')";
+				int count = stat.executeUpdate(sql);
+				stat.close();
 				conn.close();
-				out.println("成功添加一条记录！");
+				out.println(count + "row(s) affected.");
 			}
 		%>
 		<form action="insertPage.html">
-			<input type="submit" value="返回">
+			<input type="submit" value="继续添加">
 		</form>
 	</body>
 </html>

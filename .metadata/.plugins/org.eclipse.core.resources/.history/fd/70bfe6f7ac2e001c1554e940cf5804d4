@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>20211014(ddl)Java Web作业（第6章）</title>
+	</head>
+	<body>
+		<h2><a href="insertPage.html" target="frame">添加</a></h2>
+		<h2><a href="deletePage.html" target="frame">删除</a></h2>
+		<h2><a href="updatePage.html" target="frame">修改</a></h2>
+		<h2><a href="selectPage.html" target="frame">查询</a></h2>
+		<iframe name="frame" width=800px height=350px></iframe>
+	</body>
+</html>

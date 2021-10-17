@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Insert title here</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			div{
+				text-align: center;
+			}
+			.span1{
+				font-size: 35px;
+			}
+			.left_span {
+				float: left;
+			}
+			.right_span{
+				float: right;
+			}
+			#theDiv{
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<span class="left_span"><span class="span1">name</span></span>
+			<span class="right_span"><span class="span1">id</span></span>
+			<div id="theDiv"></div>
+			<span class="left_span">123</span>
+			<span class="right_span">456</span>
+			<br>
+		</div>
+		<br>
+		count in set<br>
+		<form action="selectPage.html">
+			<input type="submit" value="继续查询">
+		</form>
+	</body>
+</html>

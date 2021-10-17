@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>20211014(ddl)Java Web作业（第6章）</title>
+		<!--
+		-->
+	</head>
+	<body>
+		<!--
+		<h2><a href="insertPage.html" target="frame">添加</a></h2>
+		<h2><a href="delete.jsp" target="frame">删除</a></h2>
+		<h2><a href="update.jsp" target="frame">修改</a></h2>
+		<h2><a href="search.jsp" target="frame">查询</a></h2>
+		<iframe name="frame" width=600px height=350px>
+		</iframe>
+		-->
+		<h2><a href="insertPage.html">添加</a></h2>
+		<h2><a href="deletePage.html">删除</a></h2>
+		<h2><a href="updatePage.html">修改</a></h2>
+		<h2><a href="searchPage.html">查询</a></h2>
+		<iframe name="frame" width=600px height=350px>
+		</iframe>
+	</body>
+</html>

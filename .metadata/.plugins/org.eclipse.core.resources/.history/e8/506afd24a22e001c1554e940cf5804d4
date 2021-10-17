@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<form action="update.jsp">
+			原姓名:<input type="text" name="oldName"><br>
+			<br>
+			新姓名:<input type="text" name="newName"><br>
+			新学号:<input type="text" name="newId"><br>
+			<input type="submit" value="修改">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			String name = request.getParameter("name");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/students", "root", "123456");
+			if("".equals(name)) {
+				out.println("删除失败！");
+			}
+			else {
+				Statement stat = conn.createStatement();
+				String sql = "DELETE FROM students_for_javaweb WHERE name = '" + name + "'";
+				int count = stat.executeUpdate(sql);
+				stat.close();
+				conn.close();
+				out.println(count + "row(s) affected.");
+			}
+		%>
+		<form action="deletePage.html">
+			<input type="submit" value="继续删除">
+		</form>
+	</body>
+</html>
