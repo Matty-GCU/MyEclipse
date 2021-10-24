@@ -2478,3 +2478,121 @@ java.io.FileNotFoundException: no segments* file found in org.apache.lucene.stor
 	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:703) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
 	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:72) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2021-10-19 13:10:38,167 [Worker-7] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\Matty's PC\Workspaces\MyEclipse 2016 CI\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2021-10-19 13:10:39,111 [Worker-7] INFO  org.eclipse.jetty.util.log - Logging initialized @1338905ms
+2021-10-19 13:10:41,229 [Worker-11] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|https://repo.maven.apache.org/maven2
+2021-10-19 13:10:42,210 [Worker-11] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|https://repo.maven.apache.org/maven2: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index8833277799128323887.dir: files:
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index8833277799128323887.dir: files:
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.open(DirectoryIndexReader.java:115) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:316) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:227) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.copyUpdatedDocuments(DefaultIndexUpdater.java:352) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.unpackIndexArchive(DefaultIndexUpdater.java:288) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.loadIndexDirectory(DefaultIndexUpdater.java:218) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$300(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$LuceneIndexAdaptor.setIndexFile(DefaultIndexUpdater.java:645) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:844) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:156) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1251) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1193) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:703) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:72) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2021-10-19 14:41:33,366 [Worker-9] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\Matty's PC\Workspaces\MyEclipse 2016 CI\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2021-10-19 14:41:34,262 [Worker-9] INFO  org.eclipse.jetty.util.log - Logging initialized @37567ms
+2021-10-19 14:41:36,384 [Worker-0] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|https://repo.maven.apache.org/maven2
+2021-10-19 14:41:37,347 [Worker-0] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|https://repo.maven.apache.org/maven2: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index6944847090863550278.dir: files:
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index6944847090863550278.dir: files:
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.open(DirectoryIndexReader.java:115) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:316) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:227) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.copyUpdatedDocuments(DefaultIndexUpdater.java:352) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.unpackIndexArchive(DefaultIndexUpdater.java:288) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.loadIndexDirectory(DefaultIndexUpdater.java:218) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$300(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$LuceneIndexAdaptor.setIndexFile(DefaultIndexUpdater.java:645) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:844) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:156) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1251) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1193) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:703) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:72) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2021-10-19 14:46:08,118 [Worker-1] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\Matty's PC\Workspaces\MyEclipse 2016 CI\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2021-10-19 14:46:08,855 [Worker-1] INFO  org.eclipse.jetty.util.log - Logging initialized @29261ms
+2021-10-19 14:46:10,966 [Worker-2] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|https://repo.maven.apache.org/maven2
+2021-10-19 14:46:11,987 [Worker-2] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|https://repo.maven.apache.org/maven2: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index139419901361803154.dir: files:
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index139419901361803154.dir: files:
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.open(DirectoryIndexReader.java:115) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:316) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:227) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.copyUpdatedDocuments(DefaultIndexUpdater.java:352) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.unpackIndexArchive(DefaultIndexUpdater.java:288) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.loadIndexDirectory(DefaultIndexUpdater.java:218) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$300(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$LuceneIndexAdaptor.setIndexFile(DefaultIndexUpdater.java:645) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:844) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:156) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1251) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1193) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:703) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:72) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2021-10-20 19:37:17,755 [Worker-0] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\Matty's PC\Workspaces\MyEclipse 2016 CI\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2021-10-20 19:37:18,556 [Worker-0] INFO  org.eclipse.jetty.util.log - Logging initialized @18870ms
+2021-10-20 19:37:20,673 [Worker-6] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|https://repo.maven.apache.org/maven2
+2021-10-20 19:37:24,852 [Worker-6] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|https://repo.maven.apache.org/maven2: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index6647883302713644247.dir: files:
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index6647883302713644247.dir: files:
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.open(DirectoryIndexReader.java:115) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:316) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:227) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.copyUpdatedDocuments(DefaultIndexUpdater.java:352) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.unpackIndexArchive(DefaultIndexUpdater.java:288) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.loadIndexDirectory(DefaultIndexUpdater.java:218) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$300(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$LuceneIndexAdaptor.setIndexFile(DefaultIndexUpdater.java:645) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:844) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:156) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1251) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1193) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:703) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:72) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2021-10-20 19:55:35,695 [Worker-1] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\Matty's PC\Workspaces\MyEclipse 2016 CI\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2021-10-20 19:55:36,411 [Worker-1] INFO  org.eclipse.jetty.util.log - Logging initialized @866354ms
+2021-10-20 19:55:38,540 [Worker-1] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|https://repo.maven.apache.org/maven2
+2021-10-20 19:55:39,512 [Worker-1] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|https://repo.maven.apache.org/maven2
+java.lang.NullPointerException: null
+	at org.eclipse.m2e.core.internal.MavenPluginActivator.getUserAgent(MavenPluginActivator.java:391) ~[org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.AetherClientResourceFetcher.<init>(AetherClientResourceFetcher.java:63) ~[org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.newIndexUpdateRequest(NexusIndexManager.java:1297) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1249) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1193) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:703) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:72) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2021-10-20 20:57:46,402 [Worker-1] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: C:\Users\Matty's PC\Workspaces\MyEclipse 2016 CI\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2021-10-20 20:57:47,233 [Worker-1] INFO  org.eclipse.jetty.util.log - Logging initialized @26052ms
+2021-10-20 20:57:49,416 [Worker-3] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|https://repo.maven.apache.org/maven2
+2021-10-20 20:57:50,384 [Worker-3] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|https://repo.maven.apache.org/maven2: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index1868284746911061121.dir: files:
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index1868284746911061121.dir: files:
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.open(DirectoryIndexReader.java:115) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:316) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:227) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.copyUpdatedDocuments(DefaultIndexUpdater.java:352) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.unpackIndexArchive(DefaultIndexUpdater.java:288) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.loadIndexDirectory(DefaultIndexUpdater.java:218) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$300(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$LuceneIndexAdaptor.setIndexFile(DefaultIndexUpdater.java:645) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:844) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:156) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1251) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1193) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:703) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:72) [org.eclipse.m2e.core_1.6.0.me201603161722.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
