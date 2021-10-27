@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			if("confirmDelete".equals(request.getParameter("deleteCookie"))) {
+				Cookie[] cookies = request.getCookies();
+				//删除方法有问题！！！
+				for(Cookie c: cookies) {
+					c.setMaxAge(0);
+					response.addCookie(c);
+				}
+				out.println("已删除所有Cookie。正在跳转回到登录页面...");
+				response.setHeader("refresh", "1;url=login.jsp");
+			}
+			else{
+				out.println("欢迎！");
+			}
+		%>
+		<form action="#" method="post">
+			<input type="hidden" name="deleteCookie" value="confirmDelete">
+			<input type="submit" value="删除已有的Cookie">
+		</form>
+		<form action="login.jsp">
+			<input type="submit" value="返回登录页面">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			String account = request.getParameter("account");
+			String psw = request.getParameter("psw");
+			if(account==null || psw==null || "".equals(account) || "".equals(psw)) {
+				response.sendRedirect("8.99.2hw2_login.jsp");
+			}
+			else{
+				response.sendRedirect("8.99.2hw2_welcome.jsp");
+			}
+		%>
+		<form action="#" method="post">
+			账号：<input type="text" name="account"><br>
+			密码：<input type="password" name="psw"><br>
+			<input type="submit" value="登录">
+		</form>
+	</body>
+</html>

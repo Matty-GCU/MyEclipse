@@ -1,0 +1,21 @@
+tg<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			//定义一个变量
+			String str = "12";
+			Cookie cookie = new Cookie("number", str);
+			//设置Cookie的存活期为60秒
+			cookie.setMaxAge(60);
+			//将Cookie保存于客户端
+			response.addCookie(cookie);
+			int num = Integer.parseInt(str);			
+		%>
+		该数字的平方为<%= num * num%>
+		<img alt="" src="/..//1626084337932.jpeg">
+	</body>
+</html>

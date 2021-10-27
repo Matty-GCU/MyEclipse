@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			
+			String account = request.getParameter("account");
+			String psw = request.getParameter("psw");
+			Cookie cookie1 = new Cookie("account", account);
+			Cookie cookie2 = new Cookie("psw", psw);
+			response.addCookie(cookie1);
+			response.addCookie(cookie2);
+		%>
+	</body>
+</html>

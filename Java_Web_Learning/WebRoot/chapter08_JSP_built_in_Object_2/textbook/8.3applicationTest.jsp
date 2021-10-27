@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			Integer count = (Integer) application.getAttribute("count");
+			if(count == null) {
+				count = new Integer("0");
+			}
+			count++;
+			application.setAttribute("count", count);
+			
+		%>
+		您是该页面的第<%= count%>个访问者。
+	</body>
+</html>

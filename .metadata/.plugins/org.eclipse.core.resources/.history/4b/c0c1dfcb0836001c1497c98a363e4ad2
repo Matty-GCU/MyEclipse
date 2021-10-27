@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			String account = request.getParameter("account");
+			String psw = request.getParameter("psw");
+			String rememberPsw = request.getParameter("rememberPsw");
+			out.println(account==null);
+			out.println(psw==null);
+			//检查账号密码的完整性
+			if("".equals(account) || "".equals(psw)) {
+				out.println("登录失败！请填写完整的账号和密码。正在跳转回登录页面...");
+				response.setHeader("refresh","1,url=login.jsp");
+			}
+			//判断是否将账号密码保存到客户端Cookie中，然后跳转到欢迎页面
+			else {
+				if("yes".equals(rememberPsw)) {
+					Cookie cookie1 = new Cookie("account", account);
+					Cookie cookie2 = new Cookie("psw", psw);
+					response.addCookie(cookie1);
+					response.addCookie(cookie2);
+				}
+				response.sendRedirect("welcome.jsp");
+			}
+		%>
+	</body>
+</html>

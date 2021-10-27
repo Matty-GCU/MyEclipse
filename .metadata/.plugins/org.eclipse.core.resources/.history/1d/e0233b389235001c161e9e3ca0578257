@@ -1,0 +1,20 @@
+tg<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			String str = "12";
+			Cookie cookie = new Cookie("num", str);
+			//设置Cookie的存活期为10秒
+			cookie.setMaxAge(10);
+			//将Cookie保存于客户端
+			response.addCookie(cookie);
+			int num = Integer.parseInt(str);			
+		%>
+		该数字的平方为<%= num * num%>
+		<a href="7.5cookiePage2.jsp">去到p2</a>
+	</body>
+</html>

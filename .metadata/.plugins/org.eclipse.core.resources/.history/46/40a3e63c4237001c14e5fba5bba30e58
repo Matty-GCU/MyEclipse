@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			form{
+				display: inline-block
+			}
+		</style>
+	</head>
+	<body>
+		<%
+			
+		%>
+		历史书1，价格10.9<form><input type="submit" value="加入购物车"></form>
+		历史书1，价格10.9<a href="#">点击购买</a>
+		历史书1，价格10.9<a href="#">点击购买</a>
+	</body>
+</html>

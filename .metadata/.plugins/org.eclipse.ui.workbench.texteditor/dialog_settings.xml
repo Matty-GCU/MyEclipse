@@ -16,30 +16,30 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="h2" key="selection"/>
+		<item value="haveLogined" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="haveLoged"/>
+			<item value="h0"/>
+			<item value="历史"/>
+			<item value="Integer"/>
+			<item value="price"/>
+			<item value="&#x09;该数字的立方：&lt;%= num * num * num%&gt;"/>
 			<item value="&lt;html&gt;"/>
 			<item value="h3"/>
-			<item value="h1"/>
-			<item value="实验6"/>
-			<item value="菜鸟教程："/>
-			<item value="../../../Workspaces/MyEclipse%202016%20CI/Web_Front_End_Learning/WebRoot/experiment/"/>
-			<item value=" ."/>
-			<item value="a href=&quot;#&quot;"/>
 		</list>
 		<list key="replacehistory">
+			<item value="haveLogined"/>
+			<item value="c0"/>
+			<item value="计算机"/>
+			<item value="String"/>
+			<item value="book_id"/>
 			<item value="h2"/>
 			<item value="h3"/>
 			<item value="images"/>
-			<item value=""/>
-			<item value="."/>
-			<item value="a"/>
-			<item value="09"/>
-			<item value="08"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

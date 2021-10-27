@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			Cookie[] cookies = request.getCookies();
+			String account = "";
+			if("confirmDelete".equals(request.getParameter("deleteCookie"))) {
+				for(Cookie c: cookies) {
+					c.setMaxAge(0);
+					response.addCookie(c);
+				}
+				response.sendRedirect("login.jsp");
+			}
+			else{
+				
+				boolean haveAccount = false;
+				boolean havePsw = false;
+				String account = null;
+				Cookie[] cookies = request.getCookies();
+				if(cookies != null) {
+					for(Cookie c: cookies) {
+						if("account".equals(c.getName())) {
+							account = c.getValue();
+							haveAccount = true;
+							break;
+						}
+					}
+					for(Cookie c: cookies) {
+						if("psw".equals(c.getName())) {
+							havePsw = true;
+							break;
+						}
+					}
+				}
+				if(haveAccount == true && havePsw == true) {
+					out.println("欢迎" + account + "！");
+				}
+				else{
+					response.sendRedirect("login.jsp");
+				}
+			
+			}
+		%>
+		<form action="#" method="post">
+			<input type="hidden" name="deleteCookie" value="confirmDelete">
+			<input type="submit" value="删除已有的Cookie">
+		</form>
+		<form action="login.jsp">
+			<input type="submit" value="返回登录页面">
+		</form>
+	</body>
+</html>

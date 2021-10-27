@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="java.util.*" %>
+<html>
+	<head>
+		<title>Insert title here</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			form{
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<%
+			String price = request.getParameter("price");
+			if(price != null) {
+				ArrayList<Integer> books = (ArrayList<Integer>) session.getAttribute("books");
+				if(books == null) {
+					books = new ArrayList<>();
+				}
+				session.setAttribute("books", arg1);
+			}
+		%>
+		历史书1，价格10.9<form action="#" method="post"><input name="price" type="hidden" value="10.9"><input type="submit" value="加入购物车"></form><br>
+		历史书2，价格27.5<form action="#" method="post"><input name="price" type="hidden" value="27.5"><input type="submit" value="加入购物车"></form><br>
+		历史书3，价格59.9<<form action="#" method="post"><input name="price" type="hidden" value="59.9"><input type="submit" value="加入购物车"></form><br>
+	</body>
+</html>

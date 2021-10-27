@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			boolean haveAccount = false;
+			boolean havePsw = false;
+			String account = null;
+			Cookie[] cookies = request.getCookies();
+			if(cookies != null) {
+				for(Cookie c: cookies) {
+					if("account".equals(c.getName())) {
+						account = c.getValue();
+						haveAccount = true;
+						out.println("有账号");
+						break;
+					}
+				}
+				for(Cookie c: cookies) {
+					if("psw".equals(c.getName())) {
+						havePsw = true;
+						out.println("有密码");
+						break;
+					}
+				}
+			}
+			
+			if(haveAccount == true && havePsw == true) {
+				out.println("已自动登录上次填写的账号密码" + account + "，正在跳转欢迎页面...");
+				//for(int i = 0; i < 1000000; i++) {}
+				response.sendRedirect("welcome.jsp");
+			}
+			else{
+				out.println("请重新登录。");
+			}
+		%>
+		<form action="check.jsp" method="post">
+			账号：<input type="text" name="account"><br>
+			密码：<input type="password" name="psw"><br>
+			记住密码<input type="radio" name="rememberPsw" value="yes"><br>
+			<input type="submit" value="登录/注册">
+		</form>
+	</body>
+</html>

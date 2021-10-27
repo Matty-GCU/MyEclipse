@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			String str = null;
+			Cookie[] cookies = request.getCookies();
+			for(Cookie c: cookies) {
+				if(c.getName().equals("num")) {
+					str = c.getValue();
+					break;
+				}
+			}
+			try{
+				int num = Integer.parseInt(str);
+				out.println("num:" + num * num * num);
+			}
+			catch(Exception e) {
+				out.println("str:" + str);
+			}
+		%>
+	</body>
+</html>

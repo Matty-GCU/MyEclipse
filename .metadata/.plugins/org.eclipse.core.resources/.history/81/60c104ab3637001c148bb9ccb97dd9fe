@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="java.util.*"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form action="8.2.1handleSessionLost.jsp" method="post">
+			请你输入书本：<input type="text" name="bewBook">
+			<input type="submit" value="添加到购物车">
+		</form>
+		<%
+			ArrayList<String> books = (ArrayList<String>) session.getAttribute("books");
+			if(books == null) {
+				books = new ArrayList<>();
+				session.setAttribute("books", books);
+			}
+			session.setAttribute("book", books);
+			String newBook = request.getParameter("newBook");
+			if(newBook != null) {
+				books.add(newBook);
+			}
+		%>
+	</body>
+</html>

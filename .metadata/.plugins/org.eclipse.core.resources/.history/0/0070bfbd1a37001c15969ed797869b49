@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			String account = request.getParameter("account");
+			String psw = request.getParameter("psw");
+			String rememberPsw = request.getParameter("rememberPsw");
+			out.println(account==null);
+			out.println(psw==null);
+			out.println(rememberPsw==null);
+			//检查账号密码的完整性
+			if(account == null || psw == null || "".equals(account) || "".equals(psw)) {
+				response.sendRedirect("login.jsp");
+			}
+			//判断是否将账号密码保存到客户端Cookie中，然后跳转到欢迎页面
+			else {
+				Cookie cookie1 = new Cookie("account", account);
+				Cookie cookie2 = new Cookie("psw", psw);
+				response.addCookie(cookie1);
+				response.addCookie(cookie2);
+				if("yes".equals(rememberPsw)) {
+					cookie1.setMaxAge(3600);
+					cookie2.setMaxAge(3600);
+				}
+				else{
+					cookie1.setMaxAge(1);
+					cookie2.setMaxAge(1);
+				}
+				response.sendRedirect("welcome.jsp");
+			}
+		%>
+	</body>
+</html>
