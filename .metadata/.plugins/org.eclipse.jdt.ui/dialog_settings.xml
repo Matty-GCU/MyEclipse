@@ -3,10 +3,14 @@
 	<item value="false" key="TypeHierarchyViewPart.qualifiednames"/>
 	<item value="3" key="TypeHierarchyViewPart.orientation"/>
 	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
+	<item value="C:\001MyProgramFiles\apache-tomcat-9.0.8\lib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
-	<section name="RefactoringWizard.preview">
-		<item value="600" key="width"/>
-		<item value="400" key="height"/>
+	<item value="560,680" key="UserLibraryLoadSaveDialog.size"/>
+	<section name="NewWebXmlLinkCreationWizardPage">
+		<item value="true" key="do_mapping"/>
+		<item value="/JavaWeb_Servlet/WebRoot/WEB-INF" key="filePath"/>
+		<item value="This is the description of my J2EE component" key="description"/>
+		<item value="This is the display name of my J2EE component" key="display_name"/>
 	</section>
 	<section name="NewHtmlCreationWizardPage">
 		<item value="HTML 5" key="doctype"/>
@@ -24,17 +28,36 @@
 		<item value="false" key="create_constructor"/>
 		<item value="true" key="create_unimplemented"/>
 	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
+	</section>
+	<section name="NewServletCreationWizardPage">
+		<item value="1] Default template for Servlet" key="template"/>
+		<item value="false" key="create_doput"/>
+		<item value="false" key="create_servletinfo"/>
+		<item value="false" key="create_dodelete"/>
+		<item value="false" key="create_constructor"/>
+		<item value="true" key="create_doget"/>
+		<item value="false" key="create_doinitdestroy"/>
+		<item value="true" key="create_main"/>
+		<item value="false" key="create_dopost"/>
+		<item value="false" key="create_unimplemented"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="600" key="width"/>
+		<item value="400" key="height"/>
+	</section>
 	<section name="NewJspCreationWizardPage">
 		<item value="/Java_Web_Learning/WebRoot/chapter04_JSP基本语法" key="filePath"/>
 		<item value="Default JSP template" key="templatezh_CN"/>
-	</section>
-	<section name="OptionalMessageDialog.hide.">
-		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="NewPackageWizardPage">
 		<item value="false" key="create_package_info_java"/>
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

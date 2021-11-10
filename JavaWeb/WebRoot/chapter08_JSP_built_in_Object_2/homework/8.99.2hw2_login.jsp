@@ -12,8 +12,10 @@
 				session.setAttribute("haveLogined", "no");
 			}
 			else{
-				response.sendRedirect("8.99.2hw2_welcome.jsp");
+				//这个跳转先写也没事，因为跳转完还会往下执行
+				//response.sendRedirect("8.99.2hw2_welcome.jsp");
 				session.setAttribute("haveLogined", "yes");
+				response.sendRedirect("8.99.2hw2_welcome.jsp");
 			}
 		%>
 		<form action="#" method="post">
