@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>属性选择器的应用</title>
+		<style type="text/css">
+			[title]{font-size:18px;color:green;}
+			p[name="a"]{font-style:italic;}		/*name是a的，是段落1*/
+			p[name~="a"]{font-weight:bold;}		/*name数组有a的，是段落1、2*/
+			p[name^="a"]{text-align:center;}	/*name以a开头的，是段落1、2、3*/
+			p[name$="a"]{color:blue;}			/*name以a结尾的，是段落1、4*/
+			p[name*="h"]{text-decoration:underline;}	/*name包含h的，是段落4*/
+		</style>
+	<script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"8123",secure:"8124"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
+	<body data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-20" data-genuitec-path="/Web_FrontEnd/WebRoot/chapter07_basicsOfCSS/edu_7_2_2_attribute_selector.html">
+		<h3 data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-20" data-genuitec-path="/Web_FrontEnd/WebRoot/chapter07_basicsOfCSS/edu_7_2_2_attribute_selector.html">属性选择器的应用</h3>
+		<p title="p1" name="a">段落1：p的title属性为p1（把鼠标放上来就可以看到title属性的值），name属性为a</p>
+		<p name="a b">段落2：p的name属性为b</p>
+		<p name="ab">段落3：p的name属性为c</p>
+		<p name="bhhha">段落4：p的name属性为d</p>
+	</body>
+</html>
