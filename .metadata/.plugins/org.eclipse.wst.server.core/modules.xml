@@ -8,4 +8,5 @@
   <module deployMode="EXPLODED" moduleId="org.eclipse.jst.jee.server:WebFrontEndLearning" serverId="Tomcat v9.0 Server at localhost"/>
   <module deployMode="EXPLODED" moduleId="org.eclipse.jst.jee.server:JavaWebLearning" serverId="Tomcat v9.0 Server at localhost"/>
   <module deployMode="EXPLODED" moduleId="org.eclipse.jst.jee.server:Web_Front_End_Learning" serverId="Tomcat v9.0 Server at localhost"/>
+  <module deployMode="EXPLODED" moduleId="org.eclipse.jst.jee.server:Web_FrontEnd" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>

@@ -4459,3 +4459,24 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2021-12-02 15:11:43.387
+!MESSAGE Unable to update index for central|https://repo.maven.apache.org/maven2: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index2106825887334946611.dir: files:
+!STACK 0
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\Matty's PC\AppData\Local\Temp\nexus-index2106825887334946611.dir: files:
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604)
+	at org.apache.lucene.index.DirectoryIndexReader.open(DirectoryIndexReader.java:115)
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:316)
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:227)
+	at org.apache.maven.index.updater.DefaultIndexUpdater.copyUpdatedDocuments(DefaultIndexUpdater.java:352)
+	at org.apache.maven.index.updater.DefaultIndexUpdater.unpackIndexArchive(DefaultIndexUpdater.java:288)
+	at org.apache.maven.index.updater.DefaultIndexUpdater.loadIndexDirectory(DefaultIndexUpdater.java:218)
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$300(DefaultIndexUpdater.java:75)
+	at org.apache.maven.index.updater.DefaultIndexUpdater$LuceneIndexAdaptor.setIndexFile(DefaultIndexUpdater.java:645)
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:844)
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:156)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1251)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1193)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:703)
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:72)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
