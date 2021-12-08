@@ -7,7 +7,7 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-		<jsp:include page="4.99hw6_2.jsp"></jsp:include><br>include动作
+		<jsp:include page="4.99hw6_2.jsp"></jsp:include>include动作
 		<%@ include file="4.99hw6_2.jsp"%>include指令
 	</body>
 </html>
